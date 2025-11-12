@@ -1,0 +1,19 @@
+# Prolog compiled files
+*.qlf
+
+# SWI-Prolog specific
+*.plist
+
+# Editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+*.bak
