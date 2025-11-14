@@ -106,25 +106,60 @@ symptom(rust, rust_pustules).
 
 % Eye Spot
 symptom(eye_spot, eye_shaped_spots).
+symptom(eye_spot, minute_water_soaked_spots_on_young_leaves).
+symptom(eye_spot, reddish_brown_elliptical_lesions_parallel_to_veins).
+symptom(eye_spot, lesions_0_5_to_4_mm_long_with_yellowish_brown_margins).
+symptom(eye_spot, grey_or_tan_center_in_mature_spots).
+symptom(eye_spot, reddish_brown_to_yellowish_runners_streaking_toward_leaf_tip).
+symptom(eye_spot, lesions_may_coalesce_into_long_streaks).
+symptom(eye_spot, seedling_blight_and_top_rot_in_severe_infections).
 
 % Brown Spot
 symptom(brown_spot, brown_spots).
+symptom(brown_spot, red_brown_oval_or_elliptical_lesions_on_leaf_blade).
+symptom(brown_spot, lesion_size_approximately_3_to_15_mm).
+symptom(brown_spot, narrow_yellow_halo_around_spots).
+symptom(brown_spot, spots_may_increase_and_coalesce_forming_larger_necrotic_areas).
+symptom(brown_spot, occurs_from_seedling_stage_through_maturity_under_favourable_conditions).
 
 % Yellow Spot
 symptom(yellow_spot, yellow_spots).
+symptom(yellow_spot, small_yellow_leaf_lesions_initially).
+symptom(yellow_spot, lesions_enlarge_and_turn_reddish_or_brown_with_age).
+symptom(yellow_spot, splotchy_yellow_lesions_that_may_transition_to_brown).
+symptom(yellow_spot, gray_fuzzy_down_of_conidiophores_often_on_leaf_underside).
+symptom(yellow_spot, visible_from_distance_when_widespread_in_canopy_wet_tropics).
 
 % Brown Stripe
 symptom(brown_stripe, brown_stripes).
+symptom(brown_stripe, brown_lesions_along_leaf_blades_parallel_to_veins).
+symptom(brown_stripe, narrow_dark_brown_stripes_on_young_leaves).
+symptom(brown_stripe, lesions_may_merge_into_bands_covering_large_leaf_area).
+symptom(brown_stripe, disease_develops_under_warm_humid_conditions).
 
 % Ring Spot
 symptom(ring_spot, ring_shaped_spots).
+symptom(ring_spot, small_elongated_or_oval_spots_dark_olivaceous_green_to_reddish_brown).
+symptom(ring_spot, narrow_yellow_halo_surrounding_each_spot).
+symptom(ring_spot, larger_elongated_lesions_2_5_to_5_mm_x_10_to_18_mm_with_red_brown_margins).
+symptom(ring_spot, spots_coalesce_into_patches_leading_to_leaf_chlorosis_and_necrosis).
+symptom(ring_spot, small_black_fruiting_bodies_may_be_visible_in_old_lesions).
+
 
 %leaf blast
 symptom(leaf_blast, yellow_narrow_spots_with_long_axes_parallel_to_vessels).
+symptom(leaf_blast, small_yellowish_or_pale_spots_on_leaf_blades_initially).
+symptom(leaf_blast, spots_extend_long_axes_parallel_to_leaf_veins).
+symptom(leaf_blast, lesions_turn_brown_and_merge_into_larger_blighted_areas).
+symptom(leaf_blast, severe_infection_causes_whole_leaf_to_wither_and_dry).
 
 %curvularia leaf spot disease
 symptom(curvularia_leaf_spot, slight_pale_yellow_ribbon_on_first_five_leaves).
 symptom(curvularia_leaf_spot, red_changes_around_lesion).
+symptom(curvularia_leaf_spot, small_to_medium_brown_or_reddish_elliptical_lesions_on_leaves).
+symptom(curvularia_leaf_spot, pale_yellow_ribbon_or_band_on_first_few_leaves_of_seedlings).
+symptom(curvularia_leaf_spot, red_or_reddish_margin_or_red_changes_around_lesion_center).
+symptom(curvularia_leaf_spot, lesions_may_coalesce_and_cause_early_leaf_senescence).
 
 % ------------------------------------------------------------
 % SECTION 3: PESTS (CAUSATIVE AGENTS)
