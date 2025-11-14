@@ -139,6 +139,19 @@ pest(root_borer).
 pest(nematode).
 pest(mealy_bug).
 pest(scale_insect).
+pest(oligonychus_stickneyi).
+pest(oligonychus_pratensis).
+pest(oligonychus_grypus).
+pest(oollembola).
+pest(acleridae).
+pest(aphididae).
+pest(coccidae).
+pest(cydnidae).
+pest(delphacidae).
+pest(pseudococcidae).
+pest(coleoptera).
+pest(buprestidae).
+
 
 % ------------------------------------------------------------
 % SECTION 4: PEST-DISEASE RELATIONSHIPS
@@ -163,6 +176,11 @@ causes(foliar_fungus, yellow_spot).
 causes(foliar_fungus, brown_stripe).
 causes(foliar_fungus, ring_spot).
 causes(xanthomonas_albilineans, leaf_scald).
+causes(aphididae, sugarcane_yellow_leaf_virus).
+causes(coccidae, sugarcane_yellow_leaf_luteovirus).
+causes(delphacidae, fiji_disease).
+causes(buprestidae, dead_tissue).
+
 
 % ------------------------------------------------------------
 % SECTION 5: PESTICIDES / CONTROL MEASURES
@@ -187,6 +205,13 @@ controls(carbendazim, ceratocystis_paradoxa).
 controls(propiconazole, sporisorium_scitamineum).
 controls(mancozeb, foliar_fungus).
 controls(copper_oxychloride, foliar_fungus).
+controls(imd-178, whitefly).
+controls(chakrawarti, leaf_hopper).
+controls(sarvashakti, mealybug).
+controls(ashwamedh_plus, mealybug).
+controls(organic_pest_controller, early_shoot_borer).
+controls(acaricides, mites).
+
 
 % ------------------------------------------------------------
 % SECTION 7: INFERENCE RULES
@@ -234,3 +259,11 @@ list_all_diseases :-
     format('~n=== ALL DISEASES IN KNOWLEDGE BASE ===~n'),
     forall(disease(D), describe_disease(D)).
 
+%------------------------------------------------
+% PEST and the area they are most common
+%------------------------------------------------
+
+area(oligonychus_stickneyi, hawaii).
+area(oligonychus_pratensis, florida).
+area(oligonychus_grypus, florida).
+area(aphididae, texas).
