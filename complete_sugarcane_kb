@@ -25,6 +25,8 @@ disease(yellow_spot).
 disease(brown_stripe).
 disease(ring_spot).
 disease(leaf_scald).
+disease(leaf_blast).
+disease(curvularia_leaf_spot).
 
 % ------------------------------------------------------------
 % SECTION 2: SYMPTOMS OF DISEASES
@@ -43,6 +45,7 @@ symptom(red_rot, entire_stool_dries).
 % Smut
 symptom(smut, excessive_tillering_lanky).
 symptom(smut, black_whip_structures).
+symptom(smut, whip-like_sorus-bearing_structures).
 
 % Wilt
 symptom(wilt, yellowish_stools_drying).
@@ -116,6 +119,13 @@ symptom(brown_stripe, brown_stripes).
 % Ring Spot
 symptom(ring_spot, ring_shaped_spots).
 
+%leaf blast
+symptom(leaf_blast, yellow_narrow_spots_with_long_axes_parallel_to_vessels).
+
+%curvularia leaf spot disease
+symptom(curvularia_leaf_spot, slight_pale_yellow_ribbon_on_first_five_leaves).
+symptom(curvularia_leaf_spot, red_changes_around_lesion).
+
 % ------------------------------------------------------------
 % SECTION 3: PESTS (CAUSATIVE AGENTS)
 % ------------------------------------------------------------
@@ -136,6 +146,7 @@ pest(foliar_fungus).
 pest(xanthomonas_albilineans).
 pest(white_grub).
 pest(root_borer).
+pest(stem_borer).
 pest(nematode).
 pest(mealy_bug).
 pest(scale_insect).
@@ -151,6 +162,12 @@ pest(delphacidae).
 pest(pseudococcidae).
 pest(coleoptera).
 pest(buprestidae).
+pest(paraphaeosphaeria_michotii).
+pest(curvularia_lunata).
+pest(leaf_hopper).
+pest(army_worm).
+pest(termite).
+pest(black_beetle).
 
 
 % ------------------------------------------------------------
@@ -180,6 +197,8 @@ causes(aphididae, sugarcane_yellow_leaf_virus).
 causes(coccidae, sugarcane_yellow_leaf_luteovirus).
 causes(delphacidae, fiji_disease).
 causes(buprestidae, dead_tissue).
+causes(paraphaeosphaeria_michotii, leaf_blast).
+causes(curvularia_leaf_spot, curvularia_lunata).
 
 
 % ------------------------------------------------------------
@@ -192,6 +211,18 @@ pesticide(carbendazim).
 pesticide(propiconazole).
 pesticide(mancozeb).
 pesticide(copper_oxychloride).
+pesticide(imd-178).
+pesticide(pyron).
+pesticide(chakrawarti).
+pesticide(sarvashakti).
+pesticide(organic_pest_controller).
+pesticide(triadimefon).
+pesticide(chlorpyrifos).
+pesticide(diazinon).
+pesticide(Thiamethoxam).
+pesticide(Imidacloprid).
+pesticide(Fipronil).
+pesticide(Bifenthrin).
 
 % ------------------------------------------------------------
 % SECTION 6: PESTICIDE-PEST RELATIONSHIPS
@@ -211,6 +242,10 @@ controls(sarvashakti, mealybug).
 controls(ashwamedh_plus, mealybug).
 controls(organic_pest_controller, early_shoot_borer).
 controls(acaricides, mites).
+controls(triadimefon, smut).
+controls(chlorpyrifos, black_beetle).
+controls(chlorpyrifos, termite).
+controls(chlorpyrifos, army_worm).
 
 
 % ------------------------------------------------------------
