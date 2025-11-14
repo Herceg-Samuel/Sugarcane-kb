@@ -1,0 +1,236 @@
+% ============================================================
+% SUGARCANE FARMING KNOWLEDGE BASE
+
+% ============================================================
+
+% ------------------------------------------------------------
+% SECTION 1: BASIC FACTS ABOUT DISEASES
+% ------------------------------------------------------------
+% Format: disease(DiseaseName).
+
+disease(red_rot).
+disease(smut).
+disease(wilt).
+disease(sett_rot).
+disease(ratoon_stunting_disease).
+disease(grassy_shoot).
+disease(mosaic).
+disease(yellow_leaf_disease).
+disease(pokkah_boeng).
+disease(leaf_fleck).
+disease(rust).
+disease(eye_spot).
+disease(brown_spot).
+disease(yellow_spot).
+disease(brown_stripe).
+disease(ring_spot).
+disease(leaf_scald).
+
+% ------------------------------------------------------------
+% SECTION 2: SYMPTOMS OF DISEASES
+% ------------------------------------------------------------
+% Format: symptom(Disease, Symptom).
+
+% Red Rot
+symptom(red_rot, reddened_areas_with_white_patches).
+symptom(red_rot, affected_parenchymatous_tissues).
+symptom(red_rot, hollow_cavity_with_grey_mycelium).
+symptom(red_rot, dark_brownish_lesions_on_rind).
+symptom(red_rot, necrosis_on_nodal_region).
+symptom(red_rot, cut_ends_show_reddening).
+symptom(red_rot, entire_stool_dries).
+
+% Smut
+symptom(smut, excessive_tillering_lanky).
+symptom(smut, black_whip_structures).
+
+% Wilt
+symptom(wilt, yellowish_stools_drying).
+symptom(wilt, dull_brownish_discolouration_internal).
+symptom(wilt, linear_pith_cavities).
+symptom(wilt, dried_canes_detopped_crown).
+symptom(wilt, yellowish_foliage).
+
+% Sett Rot
+symptom(sett_rot, pineapple_odor).
+symptom(sett_rot, setts_fail_to_germinate).
+
+% Ratoon Stunting Disease
+symptom(ratoon_stunting_disease, stunted_growth).
+symptom(ratoon_stunting_disease, reduced_tillering).
+symptom(ratoon_stunting_disease, thin_stalks_shortened_internodes).
+symptom(ratoon_stunting_disease, yellowish_foliage).
+symptom(ratoon_stunting_disease, vascular_bundle_discolouration_nodes).
+
+% Grassy Shoot
+symptom(grassy_shoot, excessive_tillering_lanky).
+symptom(grassy_shoot, narrow_leaves).
+symptom(grassy_shoot, grass_like_appearance).
+symptom(grassy_shoot, stunted_growth).
+
+% Mosaic
+symptom(mosaic, chlorotic_areas_young_leaves).
+symptom(mosaic, yellowish_stripes).
+symptom(mosaic, mild_mottling).
+symptom(mosaic, stunting).
+symptom(mosaic, yellowing).
+symptom(mosaic, necrosis).
+
+% Yellow Leaf Disease
+symptom(yellow_leaf_disease, yellowish_midrib_lower_surface).
+symptom(yellow_leaf_disease, reddish_pinkish_discolouration_midrib).
+symptom(yellow_leaf_disease, shortening_internodes_top).
+symptom(yellow_leaf_disease, bunching_leaves_top).
+symptom(yellow_leaf_disease, reduced_cane_thickness).
+symptom(yellow_leaf_disease, stunted_growth).
+symptom(yellow_leaf_disease, necrosis).
+symptom(yellow_leaf_disease, yellowing).
+
+% Pokkah Boeng
+symptom(pokkah_boeng, malformed_twisted_top).
+symptom(pokkah_boeng, white_mycelium_on_leaves).
+symptom(pokkah_boeng, wrinkling_twisting_shortening_leaves).
+symptom(pokkah_boeng, irregular_reddish_stripes_specks).
+symptom(pokkah_boeng, knife_cut_symptoms).
+symptom(pokkah_boeng, top_rot).
+
+% Leaf Fleck
+symptom(leaf_fleck, flecks_specks_leaf_lamina).
+symptom(leaf_fleck, premature_leaf_drying).
+
+% Rust
+symptom(rust, rust_pustules).
+
+% Eye Spot
+symptom(eye_spot, eye_shaped_spots).
+
+% Brown Spot
+symptom(brown_spot, brown_spots).
+
+% Yellow Spot
+symptom(yellow_spot, yellow_spots).
+
+% Brown Stripe
+symptom(brown_stripe, brown_stripes).
+
+% Ring Spot
+symptom(ring_spot, ring_shaped_spots).
+
+% ------------------------------------------------------------
+% SECTION 3: PESTS (CAUSATIVE AGENTS)
+% ------------------------------------------------------------
+% Format: pest(PestName).
+
+pest(colletotrichum_falcatum).
+pest(sporisorium_scitamineum).
+pest(fusarium_sacchari).
+pest(ceratocystis_paradoxa).
+pest(leifsonia_xyli).
+pest(sugarcane_grassy_shoot_phytoplasma).
+pest(sugarcane_mosaic_virus).
+pest(sugarcane_yellow_leaf_virus).
+pest(fusarium_verticillioides).
+pest(fusarium_proliferatum).
+pest(sugarcane_bacilliform_virus).
+pest(foliar_fungus).
+pest(xanthomonas_albilineans).
+pest(white_grub).
+pest(root_borer).
+pest(nematode).
+pest(mealy_bug).
+pest(scale_insect).
+
+% ------------------------------------------------------------
+% SECTION 4: PEST-DISEASE RELATIONSHIPS
+% ------------------------------------------------------------
+% Format: causes(Pest, Disease).
+
+causes(colletotrichum_falcatum, red_rot).
+causes(sporisorium_scitamineum, smut).
+causes(fusarium_sacchari, wilt).
+causes(ceratocystis_paradoxa, sett_rot).
+causes(leifsonia_xyli, ratoon_stunting_disease).
+causes(sugarcane_grassy_shoot_phytoplasma, grassy_shoot).
+causes(sugarcane_mosaic_virus, mosaic).
+causes(sugarcane_yellow_leaf_virus, yellow_leaf_disease).
+causes(fusarium_verticillioides, pokkah_boeng).
+causes(fusarium_proliferatum, pokkah_boeng).
+causes(sugarcane_bacilliform_virus, leaf_fleck).
+causes(foliar_fungus, rust).
+causes(foliar_fungus, eye_spot).
+causes(foliar_fungus, brown_spot).
+causes(foliar_fungus, yellow_spot).
+causes(foliar_fungus, brown_stripe).
+causes(foliar_fungus, ring_spot).
+causes(xanthomonas_albilineans, leaf_scald).
+
+% ------------------------------------------------------------
+% SECTION 5: PESTICIDES / CONTROL MEASURES
+% ------------------------------------------------------------
+% Format: pesticide(PesticideName).
+
+pesticide(thiophanate_methyl).
+pesticide(carbendazim).
+pesticide(propiconazole).
+pesticide(mancozeb).
+pesticide(copper_oxychloride).
+
+% ------------------------------------------------------------
+% SECTION 6: PESTICIDE-PEST RELATIONSHIPS
+% ------------------------------------------------------------
+% Format: controls(Pesticide, Pest).
+
+controls(thiophanate_methyl, colletotrichum_falcatum).
+controls(thiophanate_methyl, ceratocystis_paradoxa).
+controls(carbendazim, colletotrichum_falcatum).
+controls(carbendazim, ceratocystis_paradoxa).
+controls(propiconazole, sporisorium_scitamineum).
+controls(mancozeb, foliar_fungus).
+controls(copper_oxychloride, foliar_fungus).
+
+% ------------------------------------------------------------
+% SECTION 7: INFERENCE RULES
+% ------------------------------------------------------------
+
+has_disease(Disease, Symptom) :-
+    symptom(Disease, Symptom).
+
+disease_caused_by(Disease, Pest) :-
+    causes(Pest, Disease).
+
+treats_disease(Pesticide, Disease) :-
+    causes(Pest, Disease),
+    controls(Pesticide, Pest).
+
+all_symptoms(Disease, SymptomList) :-
+    findall(S, symptom(Disease, S), SymptomList).
+
+disease_info(Disease, Pest, Symptoms, Pesticides) :-
+    causes(Pest, Disease),
+    findall(S, symptom(Disease, S), Symptoms),
+    findall(P, treats_disease(P, Disease), Pesticides).
+
+suggest_treatment(Disease, Pesticide) :-
+    treats_disease(Pesticide, Disease).
+
+% ------------------------------------------------------------
+% SECTION 8: HELPER PREDICATES
+% ------------------------------------------------------------
+
+describe_disease(Disease) :-
+    disease(Disease),
+    format('~n=== DISEASE: ~w ===~n', [Disease]),
+    (causes(Pest, Disease) -> format('Caused by: ~w~n', [Pest]) ; format('Cause: Unknown~n')),
+    format('Symptoms:~n'),
+    forall(symptom(Disease, Symptom), format('  - ~w~n', [Symptom])),
+    format('Treatment options:~n'),
+    (findall(P, suggest_treatment(Disease, P), PList),
+     PList \= [] ->
+        forall(member(Pest_treat, PList), format('  - ~w~n', [Pest_treat]))
+    ;   format('  - No specific treatment listed~n')),
+    format('~n').
+
+list_all_diseases :-
+    format('~n=== ALL DISEASES IN KNOWLEDGE BASE ===~n'),
+    forall(disease(D), describe_disease(D)).
+
