@@ -254,10 +254,10 @@ pesticide(organic_pest_controller).
 pesticide(triadimefon).
 pesticide(chlorpyrifos).
 pesticide(diazinon).
-pesticide(Thiamethoxam).
-pesticide(Imidacloprid).
-pesticide(Fipronil).
-pesticide(Bifenthrin).
+pesticide(thiamethoxam).
+pesticide(imidacloprid).
+pesticide(fipronil).
+pesticide(bifenthrin).
 
 % ------------------------------------------------------------
 % SECTION 6: PESTICIDE-PEST RELATIONSHIPS
