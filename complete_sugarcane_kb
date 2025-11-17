@@ -46,6 +46,11 @@ symptom(red_rot, entire_stool_dries).
 symptom(smut, excessive_tillering_lanky).
 symptom(smut, black_whip_structures).
 symptom(smut, whip-like_sorus-bearing_structures).
+symptom(smut, excessive_tillering_lanky).
+symptom(smut, stunted_thin_canes).
+symptom(smut, narrow_weak_leaves).
+symptom(smut, proliferating_axillary_buds).
+symptom(smut, stem_or_leaf_galls).
 
 % Wilt
 symptom(wilt, yellowish_stools_drying).
@@ -57,6 +62,11 @@ symptom(wilt, yellowish_foliage).
 % Sett Rot
 symptom(sett_rot, pineapple_odor).
 symptom(sett_rot, setts_fail_to_germinate).
+symptom(sett_rot, sett_rot_before_germination).
+symptom(sett_rot, shoot_die_after_emergence).
+symptom(sett_rot, stunted_chlorotic_shoots).
+symptom(sett_rot, sett_blackening_with_spores).
+symptom(sett_rot, wilting_and_withering).
 
 % Ratoon Stunting Disease
 symptom(ratoon_stunting_disease, stunted_growth).
@@ -100,9 +110,26 @@ symptom(pokkah_boeng, top_rot).
 % Leaf Fleck
 symptom(leaf_fleck, flecks_specks_leaf_lamina).
 symptom(leaf_fleck, premature_leaf_drying).
+symptom(leaf_fleck, tiny_chlorotic_flecks).
+symptom(leaf_fleck, mottling_on_middle_leaves).
+symptom(leaf_fleck, reddening_and_drying).
+symptom(leaf_fleck, fleck_coalescence).
+symptom(leaf_fleck, reduced_plant_vigor).
 
 % Rust
 symptom(rust, rust_pustules).
+
+% Brown Rust
+symptom(rust_brown, small_chlorotic_puncta).
+symptom(rust_brown, brown_tawny_pustules).
+symptom(rust_brown, lesion_coalescence).
+symptom(rust_brown, reduced_canopy_density).
+
+% Orange Rust
+symptom(rust_orange, tiny_elongated_lesions).
+symptom(rust_orange, orange_uredinia).
+symptom(rust_orange, pale_halo_around_lesion).
+symptom(rust_orange, premature_leaf_senescence).
 
 % Eye Spot
 symptom(eye_spot, eye_shaped_spots).
