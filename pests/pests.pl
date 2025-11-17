@@ -1,6 +1,4 @@
-% ========================
-% Sugarcane Pests and Their Effects
-% ========================
+% Sugarcane Pests and Their Effect
 
 % pest(Name, ScientificName, PartAffected, EffectOnPlant, ControlMethod).
 
@@ -44,3 +42,4 @@ pest('Sugarcane Stalk Fly', 'Atherigona spp.', 'Stalks', 'Deadheart formation, s
 pest('Sugarcane Termite', 'Odontotermes spp.', 'Stalks and roots', 'Plant collapse, stunted growth', 'Soil insecticide, Organic control').
 pest('Sugarcane Leaf Roller', 'Omiodes spp.', 'Leaves', 'Rolls and eats leaves, reduces photosynthesis', 'Chemical control').
 pest('Sugarcane Root Borer', 'Eldana saccharina', 'Roots and lower stalk', 'Tunnels in stalk, reduces yield', 'Chemical and Biological control').
+
