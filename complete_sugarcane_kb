@@ -245,6 +245,10 @@ pest(whitefly).
 pest(early_shoot_borer).
 pest(sugarcane_scale).
 pest(mites).
+pest(top_shoot_borer).
+pest(internode_borer).
+pest(stalk_borer).
+
 
 
 % ------------------------------------------------------------
@@ -276,6 +280,14 @@ causes(delphacidae, fiji_disease).
 causes(buprestidae, dead_tissue).
 causes(paraphaeosphaeria_michotii, leaf_blast).
 causes(curvularia_leaf_spot, curvularia_lunata).
+causes(early_shoot_borer, dead_heart).
+causes(top_shoot_borer, leaf_mines).
+causes(top_shoot_borer, bunchy_top).
+causes(internode_borer, constricted_internodes).
+causes(internode_borer, boreholes).
+causes(stalk_borer, leaf_sheath_decay).
+causes(root_borer, dead_heart).
+
 
 
 % ------------------------------------------------------------
@@ -367,6 +379,22 @@ effect(thrips, reduced_photosynthesis).
 effect(thrips, poor_shoot_emergence).
 effect(thrips, delayed_cane_growth).
 effect(thrips, yield_reduction).
+
+% early_shoot_borer
+effect(early_shoot_borer, dead_heart).
+effect(early_shoot_borer, tunneling_stem).
+effect(early_shoot_borer, shoot_wilting).
+
+% internode_borer
+effect(internode_borer, shortened_internodes).
+effect(internode_borer, borehole_sealing).
+effect(internode_borer, yield_loss).
+
+% root_borer
+effect(root_borer, dead_heart).
+effect(root_borer, underground_stalk_damage).
+effect(root_borer, yield_loss).
+
 
 
 % ------------------------------------------------------------
