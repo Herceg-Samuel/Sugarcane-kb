@@ -264,7 +264,98 @@ causes(curvularia_leaf_spot, curvularia_lunata).
 
 
 % ------------------------------------------------------------
-% SECTION 5: PESTICIDES / CONTROL MEASURES
+% SECTION 5: EFFECTS OF KEY SUGARCANE PESTS
+% ------------------------------------------------------------
+% Format: effect(Pest, Effect).
+
+% Sugarcane Borer
+effect(sugarcane_borer, stalk_tunneling).
+effect(sugarcane_borer, reduced_sugar_content).
+effect(sugarcane_borer, stalk_breakage).
+effect(sugarcane_borer, internal_rot).
+effect(sugarcane_borer, lodging_of_canes).
+effect(sugarcane_borer, poor_milling_quality).
+
+% Top Shoot Borer
+effect(top_shoot_borer, dead_heart).
+effect(top_shoot_borer, tip_wilting).
+effect(top_shoot_borer, suppressed_shoot_growth).
+effect(top_shoot_borer, malformed_leaves).
+effect(top_shoot_borer, reduced_tillering).
+effect(top_shoot_borer, shortened_internodes).
+
+% White Grub
+effect(white_grub, severe_root_pruning).
+effect(white_grub, poor_nutrient_absorption).
+effect(white_grub, stunted_growth).
+effect(white_grub, yellowing_of_foliage).
+effect(white_grub, wilting_even_in_moist_soil).
+effect(white_grub, plant_toppling).
+
+% Sugarcane Aphid
+effect(sugarcane_aphid, leaf_yellowing).
+effect(sugarcane_aphid, leaf_curling).
+effect(sugarcane_aphid, sap_loss).
+effect(sugarcane_aphid, honeydew_deposition).
+effect(sugarcane_aphid, sooty_mold_development).
+effect(sugarcane_aphid, reduced_sucrose_accumulation).
+
+% Termites
+effect(termites, root_damage).
+effect(termites, hollowing_of_stalks).
+effect(termites, plant_collapse).
+effect(termites, dry_rot).
+effect(termites, reduced_tillering).
+effect(termites, death_of_young_setts).
+
+% Mealybug
+effect(mealybug, honeydew_production).
+effect(mealybug, sooty_mold_growth).
+effect(mealybug, sap_sucking).
+effect(mealybug, reduced_photosynthesis).
+effect(mealybug, internode_shrinkage).
+effect(mealybug, leaf_yellowing).
+effect(mealybug, stunted_growth).
+
+% Root-Knot Nematode
+effect(root_knot_nematode, root_galling).
+effect(root_knot_nematode, poor_water_absorption).
+effect(root_knot_nematode, nutrient_deficiency).
+effect(root_knot_nematode, stunting).
+effect(root_knot_nematode, slender_stalks).
+effect(root_knot_nematode, reduced_root_mass).
+effect(root_knot_nematode, wilting_under_low_stress).
+
+% Leafhopper
+effect(leafhopper, sap_extraction).
+effect(leafhopper, yellowing_of_leaf_blades).
+effect(leafhopper, leaf_tip_necrosis).
+effect(leafhopper, hopperburn_damage).
+effect(leafhopper, virus_transmission).
+effect(leafhopper, reduced_tillering).
+effect(leafhopper, stunted_plants).
+
+% Stalk Borer
+effect(stalk_borer, tunneling_in_lower_stalk).
+effect(stalk_borer, internal_tissue_destruction).
+effect(stalk_borer, reduced_juice_content).
+effect(stalk_borer, increased_fiber_percentage).
+effect(stalk_borer, breakage_at_wind).
+effect(stalk_borer, lodging).
+effect(stalk_borer, poor_cane_quality).
+
+% Thrips
+effect(thrips, leaf_silvering).
+effect(thrips, leaf_scarring).
+effect(thrips, curling_of_leaf_edges).
+effect(thrips, reduced_photosynthesis).
+effect(thrips, poor_shoot_emergence).
+effect(thrips, delayed_cane_growth).
+effect(thrips, yield_reduction).
+
+
+% ------------------------------------------------------------
+% SECTION 6: PESTICIDES / CONTROL MEASURES
 % ------------------------------------------------------------
 % Format: pesticide(PesticideName).
 
@@ -287,7 +378,7 @@ pesticide(fipronil).
 pesticide(bifenthrin).
 
 % ------------------------------------------------------------
-% SECTION 6: PESTICIDE-PEST RELATIONSHIPS
+% SECTION 7: PESTICIDE-PEST RELATIONSHIPS
 % ------------------------------------------------------------
 % Format: controls(Pesticide, Pest).
 
@@ -311,7 +402,7 @@ controls(chlorpyrifos, army_worm).
 
 
 % ------------------------------------------------------------
-% SECTION 7: INFERENCE RULES
+% SECTION 8: INFERENCE RULES
 % ------------------------------------------------------------
 
 has_disease(Disease, Symptom) :-
@@ -336,7 +427,7 @@ suggest_treatment(Disease, Pesticide) :-
     treats_disease(Pesticide, Disease).
 
 % ------------------------------------------------------------
-% SECTION 8: HELPER PREDICATES
+% SECTION 9: HELPER PREDICATES
 % ------------------------------------------------------------
 
 describe_disease(Disease) :-

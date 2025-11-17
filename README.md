@@ -1,6 +1,6 @@
 # Sugarcane Knowledge Base
 
-## Important'!'
+## Important !
 
 1. Make a pull request before making any changes.
 2. Find gaps in the data.
@@ -15,6 +15,6 @@
 1. [https://plantvillage.psu.edu/topics/sugarcane/infos]
 2. [https://edis.ifas.ufl.edu/publication/PP321]
 3. [https://www.researchgate.net/figure/The-symptoms-of-Sugarcane-brown-stripe-in-the-susceptible-YT93-159-and-resistant_fig1_380124486]
-4. [https://edis.ifas.ufl.edu/publication/PP321?utm_source=chatgpt.com]
+4. [https://edis.ifas.ufl.edu/publication/PP321]
 5. [https://agritech.tnau.ac.in/crop_protection/sugarcane_diseases/sugarcane_d7.html]
 6. [https://agritech.tnau.ac.in/crop_protection/sugarcane_diseases/sugarcane_d7.html]
