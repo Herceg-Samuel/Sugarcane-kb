@@ -18,3 +18,53 @@
 4. [https://edis.ifas.ufl.edu/publication/PP321]
 5. [https://agritech.tnau.ac.in/crop_protection/sugarcane_diseases/sugarcane_d7.html]
 6. [https://agritech.tnau.ac.in/crop_protection/sugarcane_diseases/sugarcane_d7.html]
+
+## Inference
+
+```prolog
+
+has_disease(Disease, Symptom) :-
+    symptom(Disease, Symptom).
+
+disease_caused_by(Disease, Pest) :-
+    causes(Pest, Disease).
+
+treats_disease(Pesticide, Disease) :-
+    causes(Pest, Disease),
+    controls(Pesticide, Pest).
+
+all_symptoms(Disease, SymptomList) :-
+    findall(S, symptom(Disease, S), SymptomList).
+
+disease_info(Disease, Pest, Symptoms, Pesticides) :-
+    causes(Pest, Disease),
+    findall(S, symptom(Disease, S), Symptoms),
+    findall(P, treats_disease(P, Disease), Pesticides).
+
+suggest_treatment(Disease, Pesticide) :-
+    treats_disease(Pesticide, Disease).
+
+```
+
+## HELPER PREDICATES
+
+```prolog
+
+describe_disease(Disease) :-
+    disease(Disease),
+    format('~n=== DISEASE: ~w ===~n', [Disease]),
+    (causes(Pest, Disease) -> format('Caused by: ~w~n', [Pest]) ; format('Cause: Unknown~n')),
+    format('Symptoms:~n'),
+    forall(symptom(Disease, Symptom), format('  - ~w~n', [Symptom])),
+    format('Treatment options:~n'),
+    (findall(P, suggest_treatment(Disease, P), PList),
+     PList \= [] ->
+        forall(member(Pest_treat, PList), format('  - ~w~n', [Pest_treat]))
+    ;   format('  - No specific treatment listed~n')),
+    format('~n').
+
+list_all_diseases :-
+    format('~n=== ALL DISEASES IN KNOWLEDGE BASE ===~n'),
+    forall(disease(D), describe_disease(D)).
+
+```
