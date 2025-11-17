@@ -18,3 +18,6 @@
 4. [https://edis.ifas.ufl.edu/publication/PP321]
 5. [https://agritech.tnau.ac.in/crop_protection/sugarcane_diseases/sugarcane_d7.html]
 6. [https://agritech.tnau.ac.in/crop_protection/sugarcane_diseases/sugarcane_d7.html]
+7. [https://www.researchgate.net/publication/377874204_Insect_Pests_of_Sugarcane]
+8. [https://www.slideshare.net/slideshow/pests-of-sugarcane/251546608]
+
