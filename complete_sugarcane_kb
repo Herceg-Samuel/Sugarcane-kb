@@ -399,7 +399,17 @@ controls(triadimefon, smut).
 controls(chlorpyrifos, black_beetle).
 controls(chlorpyrifos, termite).
 controls(chlorpyrifos, army_worm).
-
+controls(diazinon, root_borer).
+controls(diazinon, early_shoot_borer).
+controls(diazinon, termites).
+controls(thiamethoxam, leaf_hopper).
+controls(thiamethoxam, aphid).
+controls(imidacloprid, whitefly).
+controls(imidacloprid, aphid).
+controls(fipronil, termite).
+controls(fipronil, early_shoot_borer).
+controls(bifenthrin, termite).
+controls(bifenthrin, cutworm).
 
 % ------------------------------------------------------------
 % SECTION 8: INFERENCE RULES
