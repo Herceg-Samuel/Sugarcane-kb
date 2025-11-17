@@ -287,7 +287,13 @@ causes(internode_borer, constricted_internodes).
 causes(internode_borer, boreholes).
 causes(stalk_borer, leaf_sheath_decay).
 causes(root_borer, dead_heart).
-
+causes(leaf_hopper, phloem_sap_feeding).
+causes(leaf_hopper, sooty_mold_development).
+causes(whitefly, leaf_yellowing).
+causes(whitefly, leaf_paling).
+causes(whitefly, sooty_mold).
+causes(mealy_bug, sap_sucking).
+causes(mealy_bug, sooty_mold).
 
 
 % ------------------------------------------------------------
@@ -354,13 +360,13 @@ effect(root_knot_nematode, reduced_root_mass).
 effect(root_knot_nematode, wilting_under_low_stress).
 
 % Leafhopper
-effect(leafhopper, sap_extraction).
-effect(leafhopper, yellowing_of_leaf_blades).
-effect(leafhopper, leaf_tip_necrosis).
-effect(leafhopper, hopperburn_damage).
-effect(leafhopper, virus_transmission).
-effect(leafhopper, reduced_tillering).
-effect(leafhopper, stunted_plants).
+effect(leaf_hopper, sap_extraction).
+effect(leaf_hopper, yellowing_of_leaf_blades).
+effect(leaf_hopper, leaf_tip_necrosis).
+effect(leaf_hopper, hopperburn_damage).
+effect(leaf_hopper, virus_transmission).
+effect(leaf_hopper, reduced_tillering).
+effect(leaf_hopper, stunted_plants).
 
 % Stalk Borer
 effect(stalk_borer, tunneling_in_lower_stalk).
@@ -395,6 +401,15 @@ effect(root_borer, dead_heart).
 effect(root_borer, underground_stalk_damage).
 effect(root_borer, yield_loss).
 
+% whitefly
+effect(whitefly, leaf_drying).
+effect(whitefly, slow_plant_growth).
+effect(whitefly, discoloration).
+
+%  mealy_bug
+effect(whitefly, leaf_drying).
+effect(whitefly, slow_plant_growth).
+effect(whitefly, discoloration).
 
 
 % ------------------------------------------------------------
