@@ -188,6 +188,17 @@ symptom(curvularia_leaf_spot, pale_yellow_ribbon_or_band_on_first_few_leaves_of_
 symptom(curvularia_leaf_spot, red_or_reddish_margin_or_red_changes_around_lesion_center).
 symptom(curvularia_leaf_spot, lesions_may_coalesce_and_cause_early_leaf_senescence).
 
+% Leaf Scald 
+symptom(leaf_scald, white_stripes_on_leaves).
+symptom(leaf_scald, leaf_yellowing_from_tip).
+symptom(leaf_scald, stunted_growth).
+symptom(leaf_scald, cane_death_in_advanced_infection).
+
+% Fiji Disease
+symptom(fiji_disease, leaf_rust_brown_patches).
+symptom(fiji_disease, stunted_growth).
+symptom(fiji_disease, wilting_of_whole_plant).
+
 % ------------------------------------------------------------
 % SECTION 3: PESTS (CAUSATIVE AGENTS)
 % ------------------------------------------------------------
@@ -230,6 +241,10 @@ pest(leaf_hopper).
 pest(army_worm).
 pest(termite).
 pest(black_beetle).
+pest(whitefly).
+pest(early_shoot_borer).
+pest(sugarcane_scale).
+pest(mites).
 
 
 % ------------------------------------------------------------
@@ -376,6 +391,8 @@ pesticide(thiamethoxam).
 pesticide(imidacloprid).
 pesticide(fipronil).
 pesticide(bifenthrin).
+pesticide(oxamyl).
+pesticide(fenamiphos).
 
 % ------------------------------------------------------------
 % SECTION 7: PESTICIDE-PEST RELATIONSHIPS
@@ -399,6 +416,15 @@ controls(triadimefon, smut).
 controls(chlorpyrifos, black_beetle).
 controls(chlorpyrifos, termite).
 controls(chlorpyrifos, army_worm).
+controls(imidacloprid, sugarcane_aphid).
+controls(thiamethoxam, sugarcane_aphid).
+controls(organic_pest_controller, top_shoot_borer).
+controls(fipronil, top_shoot_borer).
+controls(oxamyl, root_knot_nematode).
+controls(fenamiphos, root_knot_nematode).
+controls(chlorpyrifos, sugarcane_scale).
+controls(organic_pest_controller, early_shoot_borer).
+controls(acaricides, mites).
 
 
 % ------------------------------------------------------------
@@ -455,3 +481,7 @@ area(oligonychus_stickneyi, hawaii).
 area(oligonychus_pratensis, florida).
 area(oligonychus_grypus, florida).
 area(aphididae, texas).
+area(sugarcane_aphid, louisiana).
+area(top_shoot_borer, india).
+area(root_knot_nematode, florida).
+area(early_shoot_borer, india).
