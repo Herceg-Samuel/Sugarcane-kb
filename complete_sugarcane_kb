@@ -27,6 +27,7 @@ disease(ring_spot).
 disease(leaf_scald).
 disease(leaf_blast).
 disease(curvularia_leaf_spot).
+disease(orange_rust).
 
 % ------------------------------------------------------------
 % SECTION 2: SYMPTOMS OF DISEASES
@@ -198,6 +199,16 @@ symptom(leaf_scald, cane_death_in_advanced_infection).
 symptom(fiji_disease, leaf_rust_brown_patches).
 symptom(fiji_disease, stunted_growth).
 symptom(fiji_disease, wilting_of_whole_plant).
+
+% Orange Rust
+symptom(orange_rust, orange_powdery_pustules).
+symptom(orange_rust, yellow_orange_streaks_on_leaves).
+symptom(orange_rust, pustules_between_leaf_veins).
+symptom(orange_rust, premature_leaf_drying).
+symptom(orange_rust, leaf_yellowing).
+symptom(orange_rust, reduced_tillering).
+symptom(orange_rust, stunted_growth).
+
 
 % ------------------------------------------------------------
 % SECTION 3: PESTS (CAUSATIVE AGENTS)
