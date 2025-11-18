@@ -491,6 +491,17 @@ pesticide(bifenthrin).
 pesticide(oxamyl).
 pesticide(fenamiphos).
 
+%more pesticides
+pesticide(chlorpyrifos).    
+pesticide(chlorpyrifos).    
+pesticide(quinalphos).      
+pesticide(fenamiphos).      
+pesticide(cypermethrin).    
+pesticide(phorate).         
+pesticide(propargite).     
+pesticide(carbaryl).        
+pesticide(imidacloprid).    
+
 % ------------------------------------------------------------
 % SECTION 7: PESTICIDE-PEST RELATIONSHIPS
 % ------------------------------------------------------------
@@ -522,3 +533,14 @@ controls(fenamiphos, root_knot_nematode).
 controls(chlorpyrifos, sugarcane_scale).
 controls(organic_pest_controller, early_shoot_borer).
 controls(acaricides, mites).
+
+%more controls
+controls(fenamiphos, root_grub).
+controls(chlorpyrifos, grasshopper).
+controls(quinalphos, top_borer).
+controls(chlorpyrifos, shoot_borer).
+controls(phorate, cane_weevil).
+controls(cypermethrin, cane_moth).
+controls(propargite, cane_mite).
+controls(carbaryl, earwig).
+controls(imidacloprid, cane_bug).
