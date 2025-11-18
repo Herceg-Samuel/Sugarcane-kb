@@ -255,6 +255,17 @@ pest(top_shoot_borer).
 pest(internode_borer).
 pest(stalk_borer).
 
+%more pests
+pest(grasshopper).
+pest(shoot_boorer).
+pest(top_boorer).
+pest(root_grub).
+pest(cane_moth).
+pest(cane_weevil).
+pest(cane_mite).
+pest(earwig).
+pest(cane_bug).
+
 
 
 % ------------------------------------------------------------
@@ -416,6 +427,43 @@ effect(whitefly, discoloration).
 effect(whitefly, leaf_drying).
 effect(whitefly, slow_plant_growth).
 effect(whitefly, discoloration).
+
+
+%more pests effects
+effect(grasshopper, leaf_spot).
+effect(grasshopper, leaf_blight).
+effect(grasshopper, rust).
+
+effect(shoot_borer, top_rot).
+effect(shoot_borer, stem_rot).
+effect(shoot_borer, sett_rot).
+
+effect(top_borer, top_rot).
+effect(top_borer, stem_rot).
+
+effect(root_grub, root_rot).
+effect(root_grub, root_knot).
+effect(root_grub, sett_rot).
+
+effect(cane_moth, stem_rot).
+effect(cane_moth, top_rot).
+effect(cane_moth, red_rot).
+
+effect(cane_weevil, root_rot).
+effect(cane_weevil, stem_rot).
+effect(cane_weevil, root_knot).
+
+effect(cane_mite, leaf_scald).
+effect(cane_mite, leaf_spot).
+effect(cane_mite, rust).
+
+effect(earwig, sett_rot).
+effect(earwig, stunted_shoot).
+
+effect(cane_bug, ratoon_stunting).
+effect(cane_bug, leaf_spot).
+effect(cane_bug, gumming_disease).
+
 
 
 % ------------------------------------------------------------
