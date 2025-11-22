@@ -11,7 +11,7 @@ datatype disease_name =
   curvularia_leaf_spot | orange_rust
 
 (*Define the symptom datatype to enumerate all symptoms*)
-  datatype symptom = 
+  datatype symptom_name = 
   reddened_areas_with_white_patches | affected_parenchymatous_tissues |
   hollow_cavity_with_grey_mycelium | dark_brownish_lesions_on_rind | 
   necrosis_on_nodal_region | cut_ends_show_reddening | entire_stool_dries |
@@ -45,7 +45,33 @@ datatype disease_name =
   lesions_may_merge_into_bands_covering_large_leaf_area | disease_develops_under_warm_humid_conditions | 
   ring_shaped_spots | small_elongated_or_oval_spots_dark_olivaceous_green_to_reddish_brown | 
   narrow_yellow_halo_surrounding_each_spot | larger_elongated_lesions_2_5_to_5_mm_x_10_to_18_mm_with_red_brown_margins |
-  spots_coalesce_into_patches_leading_to_leaf_chlorosis_and_necrosis |  
+  spots_coalesce_into_patches_leading_to_leaf_chlorosis_and_necrosis | small_black_fruiting_bodies_may_be_visible_in_old_lesions |
+  yellow_narrow_spots_with_long_axes_parallel_to_vessels | small_yellowish_or_pale_spots_on_leaf_blades_initially | 
+  spots_extend_long_axes_parallel_to_leaf_veins | lesions_turn_brown_and_merge_into_larger_blighted_areas | 
+  severe_infection_causes_whole_leaf_to_wither_and_dry | slight_pale_yellow_ribbon_on_first_five_leaves | 
+  red_changes_around_lesion | small_to_medium_brown_or_reddish_elliptical_lesions_on_leaves |
+  pale_yellow_ribbon_or_band_on_first_few_leaves_of_seedlings | red_or_reddish_margin_or_red_changes_around_lesion_center |
+  lesions_may_coalesce_and_cause_early_leaf_senescence | white_stripes_on_leaves | leaf_yellowing_from_tip | stunted_growth | 
+  cane_death_in_advanced_infection | leaf_rust_brown_patches | wilting_of_whole_plant
+
+(*Define the pests datatype and enumerate all pests*)
+datatype pest_name = colletotrichum_falcatum | sporisorium_scitamineum | 
+fusarium_sacchari | ceratocystis_paradoxa | leifsonia_xyli | sugarcane_grassy_shoot_phytoplasma |
+sugarcane_mosaic_virus | sugarcane_yellow_leaf_virus | fusarium_verticillioides | 
+fusarium_proliferatum | sugarcane_bacilliform_virus | foliar_fungus | xanthomonas_albilineans |
+white_grub | root_borer | stem_borer | nematode | mealy_bug | scale_insect | oligonychus_stickneyi |
+oligonychus_pratensis | oligonychus_grypus | oollembola | acleridae | aphididae | coccidae | cydnidae |
+delphacidae | pseudococcidae | coleoptera | buprestidae | paraphaeosphaeria_michotii | curvularia_lunata |
+leaf_hopper | army_worm | termite | black_beetle | whitefly | early_shoot_borer | sugarcane_scale | mites |
+top_shoot_borer | internode_borer | stalk_borer | grasshopper | shoot_boorer | top_boorer | root_grub | 
+cane_moth | cane_weevil | cane_mite | earwig | cane_bug
+
+(*Define the pesticide_name datatype and enumerate all the pesticides*)
+datatype pesticide_name = thiophanate_methyl | carbendazim | propiconazole | 
+mancozeb | copper_oxychloride | imd-178 | pyron | chakrawarti | sarvashakti | 
+organic_pest_controller | triadimefon | chlorpyrifos | diazinon | thiamethoxam | 
+imidacloprid | fipronil | bifenthrin | oxamyl | fenamiphos | quinalphos | 
+cypermethrin | phorate | propargite | carbaryl
 
 (*Define a set 'Disease' which explicitly contains all the diseases*)
 definition Disease :: "disease_name set" where
