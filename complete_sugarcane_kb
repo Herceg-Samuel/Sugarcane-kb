@@ -47,7 +47,6 @@ symptom(red_rot, entire_stool_dries).
 symptom(smut, excessive_tillering_lanky).
 symptom(smut, black_whip_structures).
 symptom(smut, whip-like_sorus-bearing_structures).
-symptom(smut, excessive_tillering_lanky).
 symptom(smut, stunted_thin_canes).
 symptom(smut, narrow_weak_leaves).
 symptom(smut, proliferating_axillary_buds).
