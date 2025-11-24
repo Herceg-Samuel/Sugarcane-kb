@@ -333,7 +333,7 @@ inductive pest_causes_disease :: "pest_name => disease_name => bool" where
 "pest_causes_disease mealy_bug sap_sucking" |
 "pest_causes_disease mealy_bug sooty_mold"
 
-induction pest_causes_effect :: "pest_name =>pest_effect_name => bool" where
+inductive pest_causes_effect :: "pest_name =>pest_effect_name => bool" where
 "pest_causes_effect sugarcane_borer stalk_tunneling" |
 "pest_causes_effect sugarcane_borer reduced_sugar_content" |
 "pest_causes_effect sugarcane_borer stalk_breakage" |
@@ -436,5 +436,42 @@ induction pest_causes_effect :: "pest_name =>pest_effect_name => bool" where
 "pest_causes_effect cane_bug ratoon_stunting" |
 "pest_causes_effect cane_bug leaf_spot" |
 "pest_causes_effect cane_bug gumming_disease"                                      |        
+
+inductive pesticide_controls :: "pesticide_name => pest_name => bool" where
+"pesticide_controls thiophanate_methyl colletotrichum_falcatum" |
+"pesticide_controls thiophanate_methyl ceratocystis_paradoxa" |
+"pesticide_controls carbendazim colletotrichum_falcatum" |
+"pesticide_controls carbendazim ceratocystis_paradoxa" |
+"pesticide_controls propiconazole sporisorium_scitamineum" |
+"pesticide_controls mancozeb foliar_fungus" |
+"pesticide_controls copper_oxychloride foliar_fungus" |
+"pesticide_controls imd-178 whitefly" |
+"pesticide_controls chakrawarti leaf_hopper" |
+"pesticide_controls sarvashakti mealybug" |
+"pesticide_controls ashwamedh_plus mealybug" |
+"pesticide_controls organic_pest_controller early_shoot_borer" |
+"pesticide_controls acaricides mites" |
+"pesticide_controls triadimefon smut" |
+"pesticide_controls chlorpyrifos black_beetle" |
+"pesticide_controls chlorpyrifos termite" |
+"pesticide_controls chlorpyrifos army_worm" |
+"pesticide_controls imidacloprid sugarcane_aphid" |
+"pesticide_controls thiamethoxam sugarcane_aphid" |
+"pesticide_controls organic_pest_controller top_shoot_borer" |
+"pesticide_controls fipronil top_shoot_borer" |
+"pesticide_controls oxamyl root_knot_nematode" |
+"pesticide_controls fenamiphos root_knot_nematode" |
+"pesticide_controls chlorpyrifos sugarcane_scale" |
+"pesticide_controls organic_pest_controller early_shoot_borer" |
+"pesticide_controls acaricides mites" |
+"pesticide_controls fenamiphos root_grub" |
+"pesticide_controls chlorpyrifos grasshopper" |
+"pesticide_controls quinalphos top_borer" |
+"pesticide_controls chlorpyrifos shoot_borer" |
+"pesticide_controls phorate cane_weevil" |
+"pesticide_controls cypermethrin cane_moth" |
+"pesticide_controls propargite cane_mite" |
+"pesticide_controls carbaryl earwig" |
+"pesticide_controls imidacloprid cane_bug"
 
 end
