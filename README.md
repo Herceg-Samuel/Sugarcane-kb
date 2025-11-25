@@ -21,7 +21,6 @@
 7. [https://www.researchgate.net/publication/377874204_Insect_Pests_of_Sugarcane]
 8. [https://www.slideshare.net/slideshow/pests-of-sugarcane/251546608]
 
-
 ## Inference
 
 ```prolog
@@ -71,4 +70,3 @@ list_all_diseases :-
     forall(disease(D), describe_disease(D)).
 
 ```
-
