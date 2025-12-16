@@ -22,11 +22,11 @@ datatype disease_name =
   pineapple_odor | setts_fail_to_germinate | sett_rot_before_germination | 
   shoot_die_after_emergence | stunted_chlorotic_shoots | sett_blackening_with_spores | 
   wilting_and_withering | stunted_growth | reduced_tillering | thin_stalks_shortened_internodes |
-  yellowish_foliage | vascular_bundle_discolouration_nodes | excessive_tillering_lanky | 
+   vascular_bundle_discolouration_nodes | 
   narrow_leaves | grass_like_appearance | chlorotic_areas_young_leaves | yellowish_stripes | 
   mild_mottling | yellowing | necrosis | yellowish_midrib_lower_surface | reddish_pinkish_discolouration_midrib | 
   shortening_internodes_top | bunching_leaves_top | reduced_cane_thickness | 
-  yellowing | malformed_twisted_top | white_mycelium_on_leaves | wrinkling_twisting_shortening_leaves | 
+ malformed_twisted_top | white_mycelium_on_leaves | wrinkling_twisting_shortening_leaves | 
   irregular_reddish_stripes_specks | knife_cut_symptoms | top_rot | flecks_specks_leaf_lamina | 
   premature_leaf_drying | tiny_chlorotic_flecks | mottling_on_middle_leaves | 
   reddening_and_drying | fleck_coalescence | reduced_plant_vigor | rust_pustules | 
@@ -51,7 +51,7 @@ datatype disease_name =
   severe_infection_causes_whole_leaf_to_wither_and_dry | slight_pale_yellow_ribbon_on_first_five_leaves | 
   red_changes_around_lesion | small_to_medium_brown_or_reddish_elliptical_lesions_on_leaves |
   pale_yellow_ribbon_or_band_on_first_few_leaves_of_seedlings | red_or_reddish_margin_or_red_changes_around_lesion_center |
-  lesions_may_coalesce_and_cause_early_leaf_senescence | white_stripes_on_leaves | leaf_yellowing_from_tip | stunted_growth | 
+  lesions_may_coalesce_and_cause_early_leaf_senescence | white_stripes_on_leaves | leaf_yellowing_from_tip | 
   cane_death_in_advanced_infection | leaf_rust_brown_patches | wilting_of_whole_plant
 
 (*Define the pests datatype and enumerate all pests*)
@@ -68,7 +68,7 @@ cane_moth | cane_weevil | cane_mite | earwig | cane_bug
 
 (*Define the pesticide_name datatype and enumerate all the pesticides*)
 datatype pesticide_name = thiophanate_methyl | carbendazim | propiconazole | 
-mancozeb | copper_oxychloride | imd-178 | pyron | chakrawarti | sarvashakti | 
+mancozeb | copper_oxychloride | imd_178 | pyron | chakrawarti | sarvashakti | 
 organic_pest_controller | triadimefon | chlorpyrifos | diazinon | thiamethoxam | 
 imidacloprid | fipronil | bifenthrin | oxamyl | fenamiphos | quinalphos | 
 cypermethrin | phorate | propargite | carbaryl
@@ -160,7 +160,7 @@ cane_moth , cane_weevil , cane_mite , earwig , cane_bug
 definition Pesticide :: "pesticide_name set" where
 "Pesticide = {
   thiophanate_methyl , carbendazim , propiconazole , 
-mancozeb , copper_oxychloride , imd-178 , pyron , chakrawarti , sarvashakti , 
+mancozeb , copper_oxychloride , imd_178 , pyron , chakrawarti , sarvashakti , 
 organic_pest_controller , triadimefon , chlorpyrifos , diazinon , thiamethoxam , 
 imidacloprid , fipronil , bifenthrin , oxamyl , fenamiphos , quinalphos , 
 cypermethrin , phorate , propargite , carbaryl
@@ -445,7 +445,7 @@ inductive pesticide_controls :: "pesticide_name => pest_name => bool" where
 "pesticide_controls propiconazole sporisorium_scitamineum" |
 "pesticide_controls mancozeb foliar_fungus" |
 "pesticide_controls copper_oxychloride foliar_fungus" |
-"pesticide_controls imd-178 whitefly" |
+"pesticide_controls imd_178 whitefly" |
 "pesticide_controls chakrawarti leaf_hopper" |
 "pesticide_controls sarvashakti mealybug" |
 "pesticide_controls ashwamedh_plus mealybug" |
@@ -473,5 +473,7 @@ inductive pesticide_controls :: "pesticide_name => pest_name => bool" where
 "pesticide_controls propargite cane_mite" |
 "pesticide_controls carbaryl earwig" |
 "pesticide_controls imidacloprid cane_bug"
+
+lemma
 
 end
